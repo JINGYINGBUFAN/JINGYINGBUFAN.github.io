@@ -151,6 +151,7 @@ html {
     color: white;
     width: 40vw;
     height: 30vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 #home_nav {
@@ -330,7 +331,7 @@ html {
     flex-direction: column;
     height: 7vh;
     width: 13vw;
-    background-color: #00008b;
+    background-color: #11116c;
     color: white;
     font-weight: 300;
     border-radius: 10px;
@@ -557,71 +558,12 @@ html {
         filter: brightness(1.05);
     }
 }
-/* use at end of website */
-/* #website_end_container {
-    margin-top: 1%;
-    height: 13vh;
-    width: 100vw;
-    background-color: #03045E;
-    display: flex;
-    flex-direction: column;
-}
-
-#website_end_info_container {
-    width: 90vw;
-    height: 13vh;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    color: white;
-}
-
-#copyrights_part {
-    height: 13vh;
-    flex: 0.5;
-    display: column;
-}
-#copyrights_part h1 {
-    margin: 0;
-    font-size: 3.3vw;
-}
-
-
-#copyrights_part h2 {
-    margin: 0;
-    margin-top: -1%;
-    font-size: 0.9vw;
-    font-weight: 300;
-}
-
-#connects_part {
-    flex: 1;
-    height: 13vh;
-    background-color: #03045E;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.connects_part_h2 {
-    flex: 1;
-    margin: 1%;
-    color: white;
-    font-size: 1.05vw;
-    margin: 0;
-    font-weight: 300;
-}
- */
 
  #footer_container {
     margin-top: 1%;
     width: 100%;
-    height: 15vh;
+    height: 23vh;
     background: linear-gradient(45deg, #03045E, #00B4D8);
-    padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -638,7 +580,7 @@ html {
 
 #footer_copyright {
     flex: 1;
-    padding: 1rem;
+    padding: 0;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -761,7 +703,7 @@ html {
 #careers_facts_and_texts_container {
     margin-left: 5%;
     height: 70vh;
-    width: 40vw;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     color: white;
@@ -1522,6 +1464,7 @@ h2 span {
     color: white;
     font-weight: 300;
     font-size: 1.1vw;
+    text-decoration: none;
 }
 
 .product-card-button:hover {
@@ -1535,4 +1478,233 @@ h2 span {
     100% {
         background-color: #06417c;
     } 
+}
+
+#return_to_product_container {
+    margin-top: 0.3%;
+    margin-left: 0.7%;
+    height: 5vh;
+    width: 13.5vw; 
+    font-size: 1vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+#return_to_product_container:hover .underline {
+    animation-name: underline_expand;
+    animation-duration: 0.45s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+#return_to_product_container a {
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+#products_detail_container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 85vh;
+    width: 100vw;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.products_image_detail_container {
+    height: 70vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.5%;
+}
+
+.products_image_texts_container {
+    margin-left: 2%;
+    height: 70vh;
+    width: 35vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.products_image_texts_container h1 {
+    font-size: 2.4vw;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.products_image_texts_container div {
+    height: 0.1vw;
+    width: 100%;
+    background-color: #00008b;
+}
+
+.products_image_texts_container p {
+    font-weight: 200;
+    font-size: 1.1vw;
+}
+
+.feature_heading {
+    font-weight: 500;
+    font-size: 1vw;
+    display: block;
+}
+
+.feature_facts {
+    font-weight: 200;
+    font-size: 1vw;
+    margin-top: 1%;
+} 
+
+
+.price {
+    color: red;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 450;
+}
+
+.purchase {
+    height: 6vh;
+    width: 8vw;
+    background-color: #003366;
+    position: absolute;
+    left: 0;
+    bottom: 4%;
+    color: white;
+    font-size: 1.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    animation: buttonAnimation 2s infinite;
+    animation-timing-function: ease;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+@keyframes buttonAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+.purchase:active {
+    animation-name: buy-now-click;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes buy-now-click {
+    100% {
+        transform: scale(0.93);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: #04407b;
+    }
+}
+
+
+#order-confirmation-container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 63vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5%;
+    margin-top: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.confirmation_heading {
+    font-weight: 400;
+    font-size: 3vw;
+    color: #1d4e89;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    width: 50vw;
+    border-width: 0 0 0.2vw 0;
+    border-style: solid;
+    border-color: #1d4e89;
+    margin-top: 0;
+}
+
+#order-confirmation-container p {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.1vw;
+    font-weight: 300;
+    width: 50vw;
+    margin-top: 0;
+
+}
+
+
+#order-confirmation-container a {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.4vw;
+    color: #1d4e89;
+    font-weight: 600;
+    margin-top: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#order-confirmation-container a:hover {
+    animation-name: buy-again-hover;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes buy-again-hover {
+    100% {
+        color: #163f71;
+    }
 }

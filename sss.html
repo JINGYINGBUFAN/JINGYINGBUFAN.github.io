@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Purchased</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f3f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Navigation Bar */
+        nav {
+            width: 100%;
+            background-color: #1d4e89;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            padding: 12px 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #18517b;
+        }
+
+        /* Purchase Header */
+        .purchase-header h1 {
+            font-size: 2.8rem;
+            color: #1d4e89;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .purchase-header p {
+            font-size: 1.1rem;
+            color: #777;
+        }
+
+        /* Item Details Section */
+        .item-details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+            gap: 30px;
+            border-top: 1px solid #e1e4e8;
+            padding-top: 30px;
+        }
+
+        .item-image img {
+            border-radius: 10px;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .item-info h2 {
+            font-size: 2rem;
+            color: #1d4e89;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .item-info p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        /* Confirmation Section */
+        .confirmation {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .confirmation p {
+            font-size: 1.3rem;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background-color: #1d4e89;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease-in-out;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            background-color: #18517b;
+        }
+
+        /* Keyframe Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="products.html">Back to Products</a>
+    </nav>
+
+    <div class="container">
+        <div class="purchase-header">
+            <h1>Thank You for Your Purchase!</h1>
+            <p>Your order has been successfully placed.</p>
+        </div>
+
+        <div class="item-details">
+            <div class="item-image">
+                <img src="https://via.placeholder.com/150" alt="Item Image">
+            </div>
+            <div class="item-info">
+                <h2>Item: Premium Headphones</h2>
+                <p><strong>Price:</strong> $149.99</p>
+                <p><strong>Quantity:</strong> 1</p>
+                <p><strong>Order Number:</strong> #1234567</p>
+                <p><strong>Estimated Delivery:</strong> 3-5 Business Days</p>
+            </div>
+        </div>
+
+        <div class="confirmation">
+            <p>We will send you a confirmation email shortly with the order details.</p>
+            <a href="index.html" class="button">Go Back to Shop</a>
+        </div>
+    </div>
+</body>
+</html>
